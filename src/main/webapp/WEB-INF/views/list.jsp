@@ -13,7 +13,7 @@
 <html>
 <head>
     <title>Title</title>
-    <script src="${APP_PATH}/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="${APP_PATH}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <link href="${APP_PATH}/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
     <script src="${APP_PATH}/static/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </head>

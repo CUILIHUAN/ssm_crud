@@ -17,8 +17,8 @@ import org.springframework.web.context.WebApplicationContext;
 import java.util.List;
 
 /**
- *
  * spring4测试的时候，需要servlet
+ *
  * @Auther:Cui LiHuan
  * @Date: 2019/4/1 23:07
  * @Description:
@@ -26,7 +26,7 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(locations = {"classpath:application.xml","classpath:springmvc.xml"})
+@ContextConfiguration(locations = {"classpath:application.xml", "classpath:springmvc.xml"})
 public class MvcTest {
 
     //传入SpringMvc的ioc
@@ -53,17 +53,24 @@ public class MvcTest {
         System.out.println("在页面需要连续显示的页码");
         int[] nums = pageInfo.getNavigatepageNums();
         for (int i : nums) {
-            System.out.print(" "+i);
+            System.out.print(" " + i);
         }
 
         //获取员工数据
         List<Employee> list = pageInfo.getList();
         for (Employee employee : list) {
-            System.out.println("ID"+employee.getEmpId()+"==>Name"+employee.getEmpName());
+            System.out.println("ID" + employee.getEmpId() + "==>Name" + employee.getEmpName());
         }
 
 
+    }
 
+    @Test
+    public void test1() {
+        Integer a = 150, b = 150;
+        int c = 150;
+        System.out.println(a == b);
+        System.out.println(a == c);
     }
 
 }
